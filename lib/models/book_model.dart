@@ -1,5 +1,3 @@
-// lib/models/book_model.dart
-
 /// BookModel represents a book in the library.
 /// This is the data model that holds the book information.
 class BookModel {
@@ -16,10 +14,9 @@ class BookModel {
   bool isRead;
   
   /// Constructor for creating a new BookModel instance
-  /// 
-  /// [title] and [author] are required strings
-  /// [yearPublished] is the publication year
-  /// [isRead] indicates if the book has been read (defaults to false)
+  /// title and author are required strings
+  /// yearPublished is the publication year
+  /// isRead indicates if the book has been read (defaults to false)
   BookModel({
     required this.title,
     required this.author,

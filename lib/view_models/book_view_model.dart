@@ -1,4 +1,4 @@
-// lib/view_models/book_view_model.dart
+
 import 'package:flutter/foundation.dart';
 import '../models/book_model.dart';
 
@@ -15,7 +15,7 @@ class BookViewModel extends ChangeNotifier {
   
   /// Adds a new book to the library
   /// 
-  /// [book] - The BookModel to add to the collection
+  /// book - The BookModel to add to the collection
   /// After adding, notifies all listeners that data has changed
   void addBook(BookModel book) {
     _books.add(book);
@@ -23,9 +23,8 @@ class BookViewModel extends ChangeNotifier {
   }
   
   /// Updates an existing book at the specified index
-  /// 
-  /// [index] - Position of the book in the list
-  /// [updatedBook] - New book data to replace the old one
+  /// index - Position of the book in the list
+  /// updatedBook - New book data to replace the old one
   /// Replaces the book and notifies listeners of the change
   void updateBook(int index, BookModel updatedBook) {
     if (index >= 0 && index < _books.length) {
@@ -35,8 +34,7 @@ class BookViewModel extends ChangeNotifier {
   }
   
   /// Removes a book from the library
-  /// 
-  /// [index] - Position of the book to remove
+  /// index - Position of the book to remove
   /// Deletes the book and updates all widgets
   void deleteBook(int index) {
     if (index >= 0 && index < _books.length) {
